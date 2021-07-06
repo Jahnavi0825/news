@@ -1,0 +1,16 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+}
+.box{
+    
+  box-sizing: minmax(225px, 1fr);
+}
+.box {
+    padding: 10px 10px;
+    box-shadow: black;
+    background-color: rgb(243, 243, 243);
+}
+.box h5 {
+    font-size: 16px;
+}

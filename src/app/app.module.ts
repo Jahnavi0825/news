@@ -7,16 +7,22 @@ import { TopheadingComponent } from './topheading/topheading.component';
 
 import {HttpClientModule} from '@angular/common/http'
 import {NewsapiservicesService} from './service/newsapiservices.service';
+import { TechnewsComponent } from './technews/technews.component';
+
+// for HttpClient import:
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopheadingComponent
+    TopheadingComponent,
+    TechnewsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LoadingBarHttpClientModule
   ],
   providers: [NewsapiservicesService],
   bootstrap: [AppComponent]
